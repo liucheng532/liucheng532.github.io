@@ -20,6 +20,7 @@ py -m http.server 8000
 - 交互和导航：编辑 `script.js`
 - 简历文件：替换 `Liucheng_resume.pdf`
 - 头像：替换 `pic/正面照.png`
+- 项目视觉素材：替换 `media/` 中对应图片或动图，并在 `data.js` 更新 `image` / `imageAlt`
 
 ## GitHub Pages
 

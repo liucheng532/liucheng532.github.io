@@ -53,6 +53,7 @@ const renderProjects = () => {
   $("#projects-grid").innerHTML = siteData.projects.map((project) => `
     <article class="project-card">
       <div class="project-topline"><span>${escapeHtml(project.number)}</span><span>${escapeHtml(project.year)}</span></div>
+      <div class="project-media"><img src="${escapeHtml(project.image)}" alt="${escapeHtml(project.imageAlt)}" loading="lazy" /></div>
       <div class="project-card-main">
         <h3>${escapeHtml(project.title)}</h3>
         <span class="project-meta">${escapeHtml(project.meta)}</span>
