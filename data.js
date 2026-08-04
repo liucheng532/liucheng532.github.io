@@ -12,7 +12,7 @@ const siteData = {
     place: "The Hong Kong University of Science and Technology (Guangzhou)",
     location: "Guangzhou, China",
     email: "cliu425@connect.hkust-gz.edu.cn",
-    photo: "pic/正面照.png",
+    photo: "media/正面照.png",
     cv: "Liucheng_resume.pdf",
     github: "https://github.com/liucheng532"
   },
@@ -42,7 +42,7 @@ const siteData = {
       title: "Humanoid robot action generation",
       meta: "Control · DRL · Domain randomization",
       description: "Learning robust whole-body behaviors for bipedal robots, with a focus on fall recovery, motion generation, and transfer from simulation to hardware.",
-      image: "media/gmr-retargeting.gif",
+      image: "media/2025gmr-retargeting.gif",
       imageAlt: "Human motion being retargeted to a simulated humanoid robot",
       link: "https://github.com/liucheng532/HiFAR",
       linkLabel: "Explore on GitHub"
@@ -53,7 +53,7 @@ const siteData = {
       title: "From video to G1 dance",
       meta: "Motion retargeting · WBC",
       description: "A video-to-dance pipeline for the Unitree G1 humanoid robot. The project took 3rd place at the 2025 IROS Mecha Challenge Robot Dance competition.",
-      image: "media/iros-presentation.jpg",
+      image: "media/2025iros-presentation.jpg",
       imageAlt: "Liu Cheng presenting the G1 motion retargeting method at IROS 2025",
       link: "https://github.com/liucheng532/From-Video-to-G1-Dance",
       linkLabel: "Explore on GitHub"
@@ -64,7 +64,7 @@ const siteData = {
       title: "ATEC real-world extreme challenge",
       meta: "Teleoperation · Bimanual manipulation",
       description: "Led a team to 8th place nationally, building a teleoperation data pipeline and training walking strategies for bimanual robots.",
-      image: "media/atec-certificate.jpg",
+      image: "media/2025atec-certificate.jpg",
       imageAlt: "ATEC2025 eighth place award certificate",
       link: "https://github.com/liucheng532/AIRBOT_VR",
       linkLabel: "Related work"
@@ -75,7 +75,7 @@ const siteData = {
       title: "Future Dynamics",
       meta: "Co-founder · Robotics systems",
       description: "A startup effort focused on the integration of robotics hardware and software, from technical strategy to working prototypes.",
-      image: "media/future-dynamics-humanoid.jpg",
+      image: "media/2024future-dynamics-humanoid.jpg",
       imageAlt: "Future Dynamics humanoid robot design concept",
       link: null,
       linkLabel: "More soon"
