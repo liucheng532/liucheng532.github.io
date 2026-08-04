@@ -7,3 +7,6 @@ dist/
 build/
 *.tmp
 *.bak
+
+# Large local portfolio decks are kept locally; GitHub rejects files over 100 MB.
+/file/
