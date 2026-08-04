@@ -9,4 +9,5 @@ build/
 *.bak
 
 # Large local portfolio decks are kept locally; GitHub rejects files over 100 MB.
-/file/
+/file/港科广-刘铖-作品集.pptx
+/file/Learning Robust Humanoid Motion Control for Robot Soccer Recovery-Locomotion and Simulated Dribbling.pptx
