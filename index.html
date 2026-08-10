@@ -3,139 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Liu Cheng — robotics researcher and builder working on humanoid robots, motion generation, and autonomous systems." />
-    <meta name="theme-color" content="#10231f" />
-    <title>Liu Cheng — Robotics & Autonomous Systems</title>
+    <meta
+      name="description"
+      content="Liu Cheng is a robotics researcher working on humanoid locomotion, reinforcement learning, robot soccer, and embodied intelligence."
+    />
+    <meta name="theme-color" content="#101716" />
+    <meta property="og:title" content="Liu Cheng — Humanoid Robotics Researcher" />
+    <meta
+      property="og:description"
+      content="Research in humanoid locomotion, reinforcement learning, robot soccer, and embodied intelligence."
+    />
+    <meta property="og:image" content="media/HOME/封面.png" />
+    <title>Liu Cheng — Humanoid Robotics Researcher</title>
+    <link rel="preload" as="image" href="media/HOME/封面.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="site-header" data-header>
-        <a class="wordmark" href="#top" aria-label="Liu Cheng home">
-          <span class="wordmark-mark">LC</span>
-          <span class="wordmark-name">Liu Cheng</span>
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#home" aria-label="Liu Cheng home">
+        <span>LIU CHENG</span>
+        <small>ROBOTICS</small>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="Liucheng_resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="media/HOME/封面.png" alt="" />
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="hero-kicker" id="hero-kicker"></p>
+          <h1 id="hero-title"></h1>
+          <p class="hero-role" id="hero-role"></p>
+          <p class="hero-specialty">Specialized in <span id="hero-specialty"></span><span class="typing-caret"></span></p>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+          <span>Explore</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 9 7 7 7-7" /></svg>
         </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span></span><span></span>
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#notes">Notes</a>
-        </nav>
-        <a class="header-cv" href="Liucheng_resume.pdf" target="_blank" rel="noreferrer">CV <span>↗</span></a>
-      </header>
+        <p class="hero-caption">THE JOURNEY TOWARD EMBODIED INTELLIGENCE</p>
+      </section>
 
-      <main id="top">
-        <section class="hero section-pad" aria-labelledby="hero-title">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-line"></span><span id="hero-kicker"></span></p>
-            <h1 id="hero-title"></h1>
-            <p class="hero-lede" id="hero-lede"></p>
-            <div class="hero-actions">
-              <a class="button button-dark" href="#research">See my work <span>↓</span></a>
-              <a class="text-link" id="hero-email" href="mailto:cliu425@connect.hkust-gz.edu.cn">Get in touch <span>↗</span></a>
+      <section id="about" class="section section-about" aria-labelledby="about-title">
+        <div class="section-label reveal"><span>01</span> About me</div>
+        <div class="about-grid">
+          <figure class="portrait reveal">
+            <img id="profile-photo" src="media/ABOUT/正面照.png" alt="Portrait of Liu Cheng" />
+            <figcaption>Guangzhou, China · 2026</figcaption>
+          </figure>
+          <div class="about-copy reveal">
+            <p class="eyebrow">ROBOTICS RESEARCHER · BUILDER</p>
+            <h2 id="about-title">I build machines that learn <em>how to move.</em></h2>
+            <div id="about-text" class="prose"></div>
+            <div class="profile-meta">
+              <div><span>Currently</span><strong id="current-role"></strong><small id="current-place"></small></div>
+              <div><span>Focus</span><strong>Humanoid Intelligence</strong><small>Learning · Control · Sim-to-Real</small></div>
             </div>
+            <div id="profile-links" class="inline-links"></div>
           </div>
-          <div class="hero-art" aria-label="Portrait of Liu Cheng">
-            <div class="hero-orbit orbit-one"></div>
-            <div class="hero-orbit orbit-two"></div>
-            <div class="hero-grid"></div>
-            <div class="hero-photo-frame">
-              <img id="hero-photo" src="pic/正面照.png" alt="Portrait of Liu Cheng" />
-              <div class="photo-caption"><span>01</span><span>GUANGZHOU · CHINA</span></div>
-            </div>
-            <div class="hero-stamp">BUILD<br />MOVE<br />LEARN</div>
-          </div>
-          <div class="hero-scroll"><span>Scroll to explore</span><span class="scroll-line"></span></div>
-        </section>
+        </div>
+        <div id="stats" class="stats reveal" aria-label="Profile highlights"></div>
+      </section>
 
-        <section id="about" class="about section-pad section-light" aria-labelledby="about-title">
-          <div class="section-heading">
-            <p class="section-index">01 / About</p>
-            <h2 id="about-title">Robots should<br /><em>understand</em> motion.</h2>
-          </div>
-          <div class="about-content">
-            <div id="about-copy" class="about-copy"></div>
-            <div class="about-aside">
-              <div class="mini-profile">
-                <span class="mini-label">Currently</span>
-                <strong id="current-role"></strong>
-                <span id="current-place"></span>
-              </div>
-              <div class="mini-profile">
-                <span class="mini-label">Based in</span>
-                <strong id="profile-location"></strong>
-                <span>GMT+8 · always curious</span>
-              </div>
-              <a class="button button-outline" href="Liucheng_resume.pdf" target="_blank" rel="noreferrer">Download full CV <span>↗</span></a>
-            </div>
-          </div>
-          <div id="stats" class="stats" aria-label="Profile highlights"></div>
-        </section>
+      <section id="research" class="section section-research" aria-labelledby="research-title">
+        <div class="section-heading reveal">
+          <div class="section-label"><span>02</span> Research</div>
+          <h2 id="research-title">Learning robust physical skills for <em>humanoid robots.</em></h2>
+          <p id="research-intro"></p>
+        </div>
+        <div id="research-list" class="research-list"></div>
+      </section>
 
-        <section id="research" class="research section-pad section-ink" aria-labelledby="research-title">
-          <div class="section-heading heading-light">
-            <p class="section-index">02 / Research</p>
-            <h2 id="research-title">Making machines<br /><em>move with purpose.</em></h2>
-          </div>
-          <div class="research-intro">
-            <p id="research-intro-copy"></p>
-            <div class="topic-list" id="topic-list"></div>
-          </div>
-          <div class="publication-wrap">
-            <div class="subheading-row"><span>Selected publication</span><span>2026</span></div>
-            <div id="publications" class="publication-list"></div>
-          </div>
-        </section>
+      <section id="projects" class="section section-projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <div class="section-label"><span>03</span> Projects & field notes</div>
+          <h2 id="projects-title">From simulation to the <em>competition floor.</em></h2>
+          <p>Robots become interesting when an idea survives contact with hardware, teammates, and the real world.</p>
+        </div>
+        <div id="project-grid" class="project-grid"></div>
+      </section>
 
-        <section id="projects" class="projects section-pad section-paper" aria-labelledby="projects-title">
-          <div class="section-heading section-heading-wide">
-            <p class="section-index">03 / Projects</p>
-            <h2 id="projects-title">Things I’ve built<br /><em>with intent.</em></h2>
-            <p class="section-summary">From simulation to hardware, I like projects that turn an idea into a robot you can see, test, and trust.</p>
-          </div>
-          <div id="projects-grid" class="project-grid"></div>
-        </section>
+      <section id="publications" class="section section-publications" aria-labelledby="publications-title">
+        <div class="publication-heading reveal">
+          <div class="section-label"><span>04</span> Publications</div>
+          <h2 id="publications-title">Selected <em>work.</em></h2>
+        </div>
+        <div id="publication-list" class="publication-list reveal"></div>
+      </section>
 
-        <section id="experience" class="experience section-pad section-orange" aria-labelledby="experience-title">
-          <div class="section-heading">
-            <p class="section-index">04 / Experience</p>
-            <h2 id="experience-title">A practice of<br /><em>showing up.</em></h2>
-          </div>
-          <div id="experience-list" class="experience-list"></div>
-        </section>
+      <section id="experience" class="section section-experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <div class="section-label"><span>05</span> Experience</div>
+          <h2 id="experience-title">A path through research, building, and <em>competition.</em></h2>
+        </div>
+        <div id="experience-list" class="experience-list reveal"></div>
+      </section>
 
-        <section id="notes" class="notes section-pad section-light" aria-labelledby="notes-title">
-          <div class="section-heading section-heading-wide">
-            <p class="section-index">05 / Notes</p>
-            <h2 id="notes-title">A few things<br /><em>on my mind.</em></h2>
-            <p class="section-summary">This is where field notes, paper summaries, and small experiments will live. The first entries are on their way.</p>
-          </div>
-          <div id="notes-list" class="notes-list"></div>
-        </section>
+      <section class="contact" aria-labelledby="contact-title">
+        <p class="contact-kicker">LET'S BUILD SOMETHING THAT MOVES.</p>
+        <h2 id="contact-title">Have a good problem?</h2>
+        <a id="contact-email" class="contact-email" href="mailto:cliu425@connect.hkust-gz.edu.cn"></a>
+        <div id="footer-links" class="contact-links"></div>
+      </section>
+    </main>
 
-        <section class="contact section-pad section-ink" aria-labelledby="contact-title">
-          <div class="contact-copy">
-            <p class="section-index">Let’s make something move.</p>
-            <h2 id="contact-title">Have a good<br /><em>problem?</em></h2>
-          </div>
-          <div class="contact-actions">
-            <a class="contact-email" id="contact-email" href="mailto:cliu425@connect.hkust-gz.edu.cn"></a>
-            <div class="social-links" id="social-links"></div>
-          </div>
-        </section>
-      </main>
+    <footer class="site-footer">
+      <span>© <span id="footer-year"></span> Liu Cheng</span>
+      <span>Humanoid Robotics · Embodied Intelligence</span>
+      <a href="#home">Back to top ↑</a>
+    </footer>
 
-      <footer class="site-footer">
-        <span>© <span id="footer-year"></span> Liu Cheng</span>
-        <span>Robotics · Research · Making</span>
-        <a href="#top">Back to top ↑</a>
-      </footer>
-    </div>
     <script src="data.js"></script>
     <script src="script.js"></script>
   </body>

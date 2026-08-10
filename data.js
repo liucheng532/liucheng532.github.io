@@ -1,32 +1,117 @@
 /*
- * Edit this file first when your personal details change.
- * The layout lives in index.html and the visual system lives in styles.css.
+ * Personal content lives here. Update this file when your CV, projects,
+ * links, or biography changes; layout and visual design live elsewhere.
  */
 const siteData = {
   profile: {
     name: "Liu Cheng",
     nameZh: "刘铖",
-    kicker: "Robotics researcher · builder · teammate",
-    lede: "I build humanoid robots that can move, recover, and learn in the real world.",
-    role: "M.Phil. student in Robotics & Autonomous Systems",
-    place: "The Hong Kong University of Science and Technology (Guangzhou)",
-    location: "Guangzhou, China",
+    kicker: "A human exploring the unknown with intelligent machines.",
+    role: "Robotics researcher at HKUST(GZ).",
+    specialties: [
+      "humanoid robotics.",
+      "reinforcement learning.",
+      "robot soccer.",
+      "embodied intelligence."
+    ],
+    academicRole: "M.Phil. Student in Robotics & Autonomous Systems",
+    institution: "The Hong Kong University of Science and Technology (Guangzhou)",
     email: "cliu425@connect.hkust-gz.edu.cn",
-    photo: "media/正面照.png",
-    cv: "Liucheng_resume.pdf",
-    github: "https://github.com/liucheng532"
+    photo: "media/ABOUT/正面照.png",
+    cv: "Liucheng_resume.pdf"
   },
+
   about: [
-    "I’m Liu Cheng (刘铖), a robotics researcher and builder currently pursuing an M.Phil. in Robotics and Autonomous Systems at HKUST(GZ). My work sits at the intersection of whole-body motion, reinforcement learning, and embodied intelligence.",
-    "I care about the gap between a policy that works in simulation and a robot that can actually recover, adapt, and collaborate. I enjoy moving between algorithms, hardware, and the messy experiments that make a system feel alive."
+    "I’m Liu Cheng (刘铖), a robotics researcher and builder pursuing an M.Phil. in Robotics and Autonomous Systems at HKUST(GZ). My work sits at the intersection of humanoid locomotion, whole-body control, reinforcement learning, and embodied intelligence.",
+    "I care about the difficult last mile between a policy that succeeds in simulation and a robot that can recover, adapt, and collaborate in the physical world. I enjoy moving between algorithms, hardware, and the experiments that turn an idea into a reliable system."
   ],
-  researchIntro: "My current thesis explores how large-scale video models can provide physical priors for humanoid motion generation. More broadly, I work on the loop from perception to action: learning representations, designing controllers, and making robots robust outside the lab.",
-  topics: ["Humanoid motion generation", "Whole-body control", "Deep reinforcement learning", "Embodied AI"],
+
   stats: [
-    { value: "03", label: "competition podiums" },
-    { value: "09", label: "robotics projects" },
-    { value: "05+", label: "years building robots" }
+    { value: "05+", label: "Years building robots" },
+    { value: "09", label: "Robotics projects" },
+    { value: "03", label: "Competition podiums" }
   ],
+
+  links: [
+    { label: "Resume / CV", url: "Liucheng_resume.pdf" },
+    { label: "GitHub", url: "https://github.com/liucheng532" },
+    { label: "Email", url: "mailto:cliu425@connect.hkust-gz.edu.cn" }
+  ],
+
+  researchIntro: "My research asks how humanoid robots can acquire robust, reusable physical skills through learning and interaction — from fall recovery and locomotion to competitive robot soccer.",
+
+  research: [
+    {
+      number: "01",
+      year: "2026",
+      title: "Learning Robust Humanoid Motion Control for Robot Soccer",
+      description: "A unified recovery–locomotion framework for humanoid robots, designed to recover from diverse falls, resume walking, and stay reliable under physical variation.",
+      image: "media/RESEARCH/2026unify recovery locomotion.png",
+      imageAlt: "Unified humanoid recovery and locomotion framework",
+      tags: ["Humanoid", "Reinforcement Learning", "Sim-to-Real"],
+      links: [
+        { label: "RoboCup demo", url: "media/PROJECTS/2026robocup.mp4" },
+        { label: "G1 recovery", url: "media/RESEARCH/2026G1摔倒起身行走.gif" },
+        { label: "T1 recovery", url: "media/RESEARCH/2026T1摔倒起身行走.gif" }
+      ]
+    },
+    {
+      number: "02",
+      year: "2026",
+      title: "Self-Play Dribbling for Humanoid Robot Soccer",
+      description: "A self-play learning framework for agile dribbling policies, connecting decision-making and whole-body control in competitive multi-agent settings.",
+      image: "media/RESEARCH/2026self-play dribble framework.png",
+      imageAlt: "Self-play humanoid dribbling policy framework",
+      tags: ["Self-Play", "Robot Soccer", "Deep RL"],
+      links: [
+        { label: "Watch policy", url: "media/RESEARCH/2026self-play dribble policy.mp4" }
+      ]
+    },
+    {
+      number: "03",
+      year: "2025",
+      title: "From Video to G1 Dance",
+      description: "A motion-retargeting and whole-body-control pipeline that transfers human movement from video to a Unitree G1 humanoid robot. Awarded third place at the IROS 2025 Mecha Challenge.",
+      image: "media/PROJECTS/2025gmr-retargeting.gif",
+      imageAlt: "Human motion retargeted to a simulated humanoid robot",
+      tags: ["Motion Retargeting", "Whole-Body Control", "IROS"],
+      links: [
+        { label: "GitHub", url: "https://github.com/liucheng532/From-Video-to-G1-Dance" }
+      ]
+    }
+  ],
+
+  projects: [
+    {
+      year: "2026",
+      title: "RoboCup 3D Simulation Champion",
+      description: "First place with the HKUST(GZ) team, developing learned recovery and robot-soccer behaviors.",
+      image: "media/PROJECTS/2026robocup championship.jpg",
+      imageAlt: "HKUST Guangzhou RoboCup championship team"
+    },
+    {
+      year: "2026",
+      title: "Recovery on G1 & Booster T1",
+      description: "Robust fall-recovery policies across humanoid platforms and changing initial states.",
+      image: "media/RESEARCH/2026G1摔倒起身行走.gif",
+      imageAlt: "Unitree G1 humanoid robot recovering from a fall"
+    },
+    {
+      year: "2025",
+      title: "ATEC Real-World Extreme Challenge",
+      description: "Led a team to eighth place nationally through teleoperation, data pipelines, and bimanual robotics work.",
+      image: "media/PROJECTS/2025atec-certificate.jpg",
+      imageAlt: "ATEC 2025 eighth-place award certificate"
+    },
+    {
+      year: "2024—Now",
+      title: "Future Dynamics",
+      description: "Co-founding a robotics effort focused on turning hardware–software integration into working prototypes.",
+      image: "media/PROJECTS/2024future-dynamics-humanoid.jpg",
+      imageAlt: "Future Dynamics humanoid robot concept"
+    }
+  ],
+
   publications: [
     {
       year: "2026",
@@ -35,91 +120,37 @@ const siteData = {
       venue: "IEEE International Conference on Robotics and Automation (ICRA) · Accepted"
     }
   ],
-  projects: [
-    {
-      number: "01",
-      year: "2024—Now",
-      title: "Humanoid robot action generation",
-      meta: "Control · DRL · Domain randomization",
-      description: "Learning robust whole-body behaviors for bipedal robots, with a focus on fall recovery, motion generation, and transfer from simulation to hardware.",
-      image: "media/2025gmr-retargeting.gif",
-      imageAlt: "Human motion being retargeted to a simulated humanoid robot",
-      link: "https://github.com/liucheng532/HiFAR",
-      linkLabel: "Explore on GitHub"
-    },
-    {
-      number: "02",
-      year: "2025",
-      title: "From video to G1 dance",
-      meta: "Motion retargeting · WBC",
-      description: "A video-to-dance pipeline for the Unitree G1 humanoid robot. The project took 3rd place at the 2025 IROS Mecha Challenge Robot Dance competition.",
-      image: "media/2025iros-presentation.jpg",
-      imageAlt: "Liu Cheng presenting the G1 motion retargeting method at IROS 2025",
-      link: "https://github.com/liucheng532/From-Video-to-G1-Dance",
-      linkLabel: "Explore on GitHub"
-    },
-    {
-      number: "03",
-      year: "2025",
-      title: "ATEC real-world extreme challenge",
-      meta: "Teleoperation · Bimanual manipulation",
-      description: "Led a team to 8th place nationally, building a teleoperation data pipeline and training walking strategies for bimanual robots.",
-      image: "media/2025atec-certificate.jpg",
-      imageAlt: "ATEC2025 eighth place award certificate",
-      link: "https://github.com/liucheng532/AIRBOT_VR",
-      linkLabel: "Related work"
-    },
-    {
-      number: "04",
-      year: "2024—Now",
-      title: "Future Dynamics",
-      meta: "Co-founder · Robotics systems",
-      description: "A startup effort focused on the integration of robotics hardware and software, from technical strategy to working prototypes.",
-      image: "media/2024future-dynamics-humanoid.jpg",
-      imageAlt: "Future Dynamics humanoid robot design concept",
-      link: null,
-      linkLabel: "More soon"
-    }
-  ],
+
   experience: [
     {
       period: "2026—Now",
-      title: "M.Phil. thesis · Text2HumanoidAction",
-      org: "HKUST(GZ)",
-      detail: "Designing a cross-modal adapter and diffusion backbone that align 1536D visual features with 38D whole-body motion for the Unitree G1."
+      title: "M.Phil. Thesis · Text2HumanoidAction",
+      organization: "HKUST(GZ)",
+      detail: "Exploring physical priors from large-scale video models for whole-body humanoid motion generation."
     },
     {
       period: "2026—Now",
       title: "RoboCup 3D Simulation Competition",
-      org: "HKUST(GZ) · Team member",
-      detail: "Building a curriculum-learning fall recovery policy with PPO, key-state initialization, and domain randomization across friction and mass changes."
+      organization: "HKUST(GZ) · Team member",
+      detail: "Developing curriculum-learning recovery policies and robust robot-soccer behaviors."
     },
     {
       period: "2025—2026",
-      title: "Embodied AI winter camp",
-      org: "Tsinghua University AIR · Outstanding camper",
-      detail: "Built a simulation data collection pipeline and deployed ACT for imitation learning on robotic-arm manipulation tasks."
+      title: "Embodied AI Winter Camp",
+      organization: "Tsinghua University AIR · Outstanding camper",
+      detail: "Built simulation data pipelines and deployed imitation-learning policies for robot manipulation."
     },
     {
       period: "2022—Now",
       title: "Future Dynamics",
-      org: "Co-founder · Technical lead",
-      detail: "Leading the technical strategy and execution of robotics hardware-software integration projects."
+      organization: "Co-founder · Technical lead",
+      detail: "Leading technical strategy and robotics hardware–software integration."
     },
     {
       period: "2020—2022",
       title: "RoboCup 3D Simulation Competition",
-      org: "NJUPT · Team leader / algorithm developer",
-      detail: "Designed bipedal role assignment and collaboration using Hungarian/KM algorithms, and optimized walking actions with CMA-ES and LIPM."
+      organization: "NJUPT · Team leader / algorithm developer",
+      detail: "Designed multi-robot role assignment and optimized bipedal walking and collaboration."
     }
-  ],
-  notes: [
-    { label: "Coming soon", title: "What it takes to make a humanoid recover", text: "A field note on fall states, curriculum design, and why robustness starts before the first fall." },
-    { label: "Coming soon", title: "From pixels to whole-body motion", text: "Notes on aligning visual representations with the low-dimensional language of a robot body." },
-    { label: "Open notebook", title: "Experiments, papers, and useful things", text: "A growing place for small observations from the lab, the competition floor, and the road." }
-  ],
-  social: [
-    { label: "GitHub", url: "https://github.com/liucheng532" },
-    { label: "Email", url: "mailto:cliu425@connect.hkust-gz.edu.cn" }
   ]
 };
