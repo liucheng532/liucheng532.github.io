@@ -117,14 +117,32 @@ const siteData = {
       imageAlt: "Unitree G1 humanoid robot performing the retargeted dance"
     },
     {
+      title: "IROS Robot Dancing Team",
+      year: "2025",
+      image: "media/PROJECTS/2025 IROS competition/team pic.jpg",
+      imageAlt: "Team photograph at the IROS 2025 Robot Dancing Competition"
+    },
+    {
       title: "ATEC Real-World Extreme Challenge",
       year: "2025",
-      image: "media/PROJECTS/2025ATECup competition/2025atec-certificate.jpg",
-      imageAlt: "ATEC award certificate",
+      image: "media/PROJECTS/2025ATECup competition/data collection teleoperation.jpg",
+      imageAlt: "Teleoperation data collection for the ATEC real-world challenge",
       links: [
         { label: "Demo 1", url: "media/PROJECTS/2025ATECup competition/real robot locomanipulation.mp4" },
         { label: "Demo 2", url: "media/PROJECTS/2025ATECup competition/real robot locomanipulation2.mp4" }
       ]
+    },
+    {
+      title: "ATEC 2025 Team",
+      year: "2025",
+      image: "media/PROJECTS/2025ATECup competition/合照.jpg",
+      imageAlt: "HKUST Guangzhou team photograph at ATEC 2025"
+    },
+    {
+      title: "ATEC National Top 8",
+      year: "2025",
+      image: "media/PROJECTS/2025ATECup competition/2025atec-certificate.jpg",
+      imageAlt: "ATEC 2025 eighth-place award certificate"
     },
     {
       title: "YC China Startup Camp",
