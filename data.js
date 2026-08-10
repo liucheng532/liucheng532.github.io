@@ -87,7 +87,10 @@ const siteData = {
       title: "RoboCup 3D Simulation Champion",
       year: "2026",
       image: "media/PROJECTS/Robocup/2026robocup championship.jpg",
-      imageAlt: "HKUST Guangzhou RoboCup championship team"
+      imageAlt: "HKUST Guangzhou RoboCup championship team",
+      links: [
+        { label: "Video", url: "media/PROJECTS/Robocup/2026robocup.mp4" }
+      ]
     },
     {
       title: "RoboCup First Place",
@@ -117,7 +120,11 @@ const siteData = {
       title: "ATEC Real-World Extreme Challenge",
       year: "2025",
       image: "media/PROJECTS/2025ATECup competition/2025atec-certificate.jpg",
-      imageAlt: "ATEC award certificate"
+      imageAlt: "ATEC award certificate",
+      links: [
+        { label: "Demo 1", url: "media/PROJECTS/2025ATECup competition/real robot locomanipulation.mp4" },
+        { label: "Demo 2", url: "media/PROJECTS/2025ATECup competition/real robot locomanipulation2.mp4" }
+      ]
     },
     {
       title: "YC China Startup Camp",

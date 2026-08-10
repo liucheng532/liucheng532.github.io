@@ -70,7 +70,11 @@ const renderProjects = () => {
   $("#project-grid").innerHTML = siteData.projects.map((item) => `
     <article class="project-card reveal">
       ${mediaMarkup(item.image, item.imageAlt, "Project image")}
-      <div class="project-caption"><h3>${escapeHtml(item.title)}</h3><span>${escapeHtml(item.year)}</span></div>
+      <div class="project-caption">
+        <h3>${escapeHtml(item.title)}</h3>
+        <span>${escapeHtml(item.year)}</span>
+        ${item.links?.length ? `<div class="item-links project-links">${linkList(item.links)}</div>` : ""}
+      </div>
     </article>
   `).join("");
 };

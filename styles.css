@@ -104,6 +104,7 @@ button { color: inherit; font: inherit; }
 .project-caption { min-height: 86px; padding: 16px 17px 18px; }
 .project-caption h3 { font-size: 13px; line-height: 1.35; margin: 0 0 5px; }
 .project-caption span { color: var(--muted); font-family: var(--nav); font-size: 7px; letter-spacing: .08em; text-transform: uppercase; }
+.project-links { margin-top: 9px; }
 
 .notes-section { min-height: 430px; }
 .notes-list { margin: 0 auto; max-width: 620px; }
