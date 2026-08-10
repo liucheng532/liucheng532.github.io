@@ -1,35 +1,28 @@
 /*
- * Personal content lives here. Update this file when your CV, projects,
- * links, or biography changes; layout and visual design live elsewhere.
+ * Website content map
+ * -------------------
+ * Add new material to the matching folder under /media, then update only
+ * this file. Missing images automatically become clean placeholders.
  */
 const siteData = {
   profile: {
     name: "Liu Cheng",
     nameZh: "刘铖",
-    kicker: "A human exploring the unknown with intelligent machines.",
     role: "Robotics researcher at HKUST(GZ).",
-    specialties: [
+    focus: [
       "humanoid robotics.",
       "reinforcement learning.",
       "robot soccer.",
       "embodied intelligence."
     ],
-    academicRole: "M.Phil. Student in Robotics & Autonomous Systems",
-    institution: "The Hong Kong University of Science and Technology (Guangzhou)",
-    email: "cliu425@connect.hkust-gz.edu.cn",
-    photo: "media/ABOUT/正面照.png",
-    cv: "Liucheng_resume.pdf"
+    portrait: "media/ABOUT/正面照.png",
+    resume: "Liucheng_resume.pdf",
+    email: "cliu425@connect.hkust-gz.edu.cn"
   },
 
   about: [
-    "I’m Liu Cheng (刘铖), a robotics researcher and builder pursuing an M.Phil. in Robotics and Autonomous Systems at HKUST(GZ). My work sits at the intersection of humanoid locomotion, whole-body control, reinforcement learning, and embodied intelligence.",
-    "I care about the difficult last mile between a policy that succeeds in simulation and a robot that can recover, adapt, and collaborate in the physical world. I enjoy moving between algorithms, hardware, and the experiments that turn an idea into a reliable system."
-  ],
-
-  stats: [
-    { value: "05+", label: "Years building robots" },
-    { value: "09", label: "Robotics projects" },
-    { value: "03", label: "Competition podiums" }
+    "I’m Liu Cheng (刘铖), an M.Phil. student in Robotics and Autonomous Systems at the Hong Kong University of Science and Technology (Guangzhou). My research interests include humanoid locomotion, whole-body control, reinforcement learning, and embodied intelligence.",
+    "I work across algorithms and robot systems, with a particular interest in turning policies that succeed in simulation into physical skills that remain reliable in the real world."
   ],
 
   links: [
@@ -38,16 +31,15 @@ const siteData = {
     { label: "Email", url: "mailto:cliu425@connect.hkust-gz.edu.cn" }
   ],
 
-  researchIntro: "My research asks how humanoid robots can acquire robust, reusable physical skills through learning and interaction — from fall recovery and locomotion to competitive robot soccer.",
+  researchIntro: "I study how humanoid robots can learn robust and reusable behaviors, from fall recovery and locomotion to competitive robot soccer.",
 
   research: [
     {
-      number: "01",
-      year: "2026",
       title: "Learning Robust Humanoid Motion Control for Robot Soccer",
-      description: "A unified recovery–locomotion framework for humanoid robots, designed to recover from diverse falls, resume walking, and stay reliable under physical variation.",
+      year: "2026",
       image: "media/RESEARCH/2026unify recovery locomotion.png",
       imageAlt: "Unified humanoid recovery and locomotion framework",
+      description: "A unified recovery–locomotion framework designed to recover from diverse falls, resume walking, and remain robust under physical variation.",
       tags: ["Humanoid", "Reinforcement Learning", "Sim-to-Real"],
       links: [
         { label: "RoboCup demo", url: "media/PROJECTS/2026robocup.mp4" },
@@ -56,24 +48,22 @@ const siteData = {
       ]
     },
     {
-      number: "02",
-      year: "2026",
       title: "Self-Play Dribbling for Humanoid Robot Soccer",
-      description: "A self-play learning framework for agile dribbling policies, connecting decision-making and whole-body control in competitive multi-agent settings.",
+      year: "2026",
       image: "media/RESEARCH/2026self-play dribble framework.png",
-      imageAlt: "Self-play humanoid dribbling policy framework",
+      imageAlt: "Self-play humanoid dribbling framework",
+      description: "A self-play learning framework for agile dribbling policies in competitive multi-agent environments.",
       tags: ["Self-Play", "Robot Soccer", "Deep RL"],
       links: [
-        { label: "Watch policy", url: "media/RESEARCH/2026self-play dribble policy.mp4" }
+        { label: "Video", url: "media/RESEARCH/2026self-play dribble policy.mp4" }
       ]
     },
     {
-      number: "03",
-      year: "2025",
       title: "From Video to G1 Dance",
-      description: "A motion-retargeting and whole-body-control pipeline that transfers human movement from video to a Unitree G1 humanoid robot. Awarded third place at the IROS 2025 Mecha Challenge.",
-      image: "media/PROJECTS/2025gmr-retargeting.gif",
-      imageAlt: "Human motion retargeted to a simulated humanoid robot",
+      year: "2025",
+      image: "media/PROJECTS/2025 IROS competition/2025gmr-retargeting.gif",
+      imageAlt: "Human motion retargeted to a humanoid robot",
+      description: "A motion-retargeting and whole-body-control pipeline for transferring human motion from video to a Unitree G1 humanoid robot.",
       tags: ["Motion Retargeting", "Whole-Body Control", "IROS"],
       links: [
         { label: "GitHub", url: "https://github.com/liucheng532/From-Video-to-G1-Dance" }
@@ -81,76 +71,55 @@ const siteData = {
     }
   ],
 
+  publications: [
+    {
+      title: "Towards Exploratory and Focused Manipulation with Bimanual Active Perception: A New Problem, Benchmark and Strategy",
+      authors: "Yuxin He, Ruihao Zhang, Tianao Shen, Cheng Liu, Qiang Nie",
+      venue: "IEEE International Conference on Robotics and Automation (ICRA)",
+      year: "2026",
+      image: null,
+      links: []
+    }
+  ],
+
   projects: [
     {
-      year: "2026",
       title: "RoboCup 3D Simulation Champion",
-      description: "First place with the HKUST(GZ) team, developing learned recovery and robot-soccer behaviors.",
-      image: "media/PROJECTS/2026robocup championship.jpg",
+      year: "2026",
+      image: "media/PROJECTS/Robocup/2026robocup championship.jpg",
       imageAlt: "HKUST Guangzhou RoboCup championship team"
     },
     {
+      title: "RoboCup First Place",
       year: "2026",
-      title: "Recovery on G1 & Booster T1",
-      description: "Robust fall-recovery policies across humanoid platforms and changing initial states.",
-      image: "media/RESEARCH/2026G1摔倒起身行走.gif",
-      imageAlt: "Unitree G1 humanoid robot recovering from a fall"
+      image: "media/PROJECTS/Robocup/2026robocup_Fristplace.jpg",
+      imageAlt: "RoboCup first-place award"
     },
     {
+      title: "HKUST(GZ) RoboCup Team",
+      year: "2026",
+      image: "media/PROJECTS/Robocup/2026robocup_hkustgz.jpg",
+      imageAlt: "HKUST Guangzhou RoboCup team"
+    },
+    {
+      title: "From Video to G1 Dance",
       year: "2025",
-      title: "ATEC Real-World Extreme Challenge",
-      description: "Led a team to eighth place nationally through teleoperation, data pipelines, and bimanual robotics work.",
-      image: "media/PROJECTS/2025atec-certificate.jpg",
-      imageAlt: "ATEC 2025 eighth-place award certificate"
+      image: "media/PROJECTS/2025 IROS competition/2025iros-presentation.jpg",
+      imageAlt: "IROS Mecha Challenge presentation"
     },
     {
-      year: "2024—Now",
+      title: "ATEC Real-World Extreme Challenge",
+      year: "2025",
+      image: "media/PROJECTS/2025atec-certificate.jpg",
+      imageAlt: "ATEC award certificate"
+    },
+    {
       title: "Future Dynamics",
-      description: "Co-founding a robotics effort focused on turning hardware–software integration into working prototypes.",
+      year: "2024—Now",
       image: "media/PROJECTS/2024future-dynamics-humanoid.jpg",
       imageAlt: "Future Dynamics humanoid robot concept"
     }
   ],
 
-  publications: [
-    {
-      year: "2026",
-      title: "Towards Exploratory and Focused Manipulation with Bimanual Active Perception: A New Problem, Benchmark and Strategy",
-      authors: "Yuxin He, Ruihao Zhang, Tianao Shen, Cheng Liu, Qiang Nie",
-      venue: "IEEE International Conference on Robotics and Automation (ICRA) · Accepted"
-    }
-  ],
-
-  experience: [
-    {
-      period: "2026—Now",
-      title: "M.Phil. Thesis · Text2HumanoidAction",
-      organization: "HKUST(GZ)",
-      detail: "Exploring physical priors from large-scale video models for whole-body humanoid motion generation."
-    },
-    {
-      period: "2026—Now",
-      title: "RoboCup 3D Simulation Competition",
-      organization: "HKUST(GZ) · Team member",
-      detail: "Developing curriculum-learning recovery policies and robust robot-soccer behaviors."
-    },
-    {
-      period: "2025—2026",
-      title: "Embodied AI Winter Camp",
-      organization: "Tsinghua University AIR · Outstanding camper",
-      detail: "Built simulation data pipelines and deployed imitation-learning policies for robot manipulation."
-    },
-    {
-      period: "2022—Now",
-      title: "Future Dynamics",
-      organization: "Co-founder · Technical lead",
-      detail: "Leading technical strategy and robotics hardware–software integration."
-    },
-    {
-      period: "2020—2022",
-      title: "RoboCup 3D Simulation Competition",
-      organization: "NJUPT · Team leader / algorithm developer",
-      detail: "Designed multi-robot role assignment and optimized bipedal walking and collaboration."
-    }
-  ]
+  notes: []
 };
