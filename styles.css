@@ -80,7 +80,8 @@ button { color: inherit; font: inherit; }
 .media-frame img { height: 100%; object-fit: cover; transition: transform .35s ease; width: 100%; }
 .research-row:nth-child(-n+2) .media-frame img { background: #fafafa; object-fit: contain; }
 .research-row:hover .media-frame img, .project-card:hover .media-frame img { transform: scale(1.025); }
-.media-placeholder { align-items: center; color: #929797; display: none; font-family: var(--nav); font-size: 10px; inset: 0; justify-content: center; letter-spacing: .08em; line-height: 1.6; padding: 20px; position: absolute; text-align: center; text-transform: uppercase; }
+.media-placeholder { align-items: center; color: #929797; display: none; flex-direction: column; font-family: var(--nav); font-size: 10px; inset: 0; justify-content: center; letter-spacing: .08em; line-height: 1.6; padding: 20px; position: absolute; text-align: center; text-transform: uppercase; }
+.media-placeholder b { font-weight: 500; }
 .media-placeholder small { font-family: var(--sans); font-size: 9px; letter-spacing: 0; text-transform: none; }
 .media-frame:not(:has(img)) .media-placeholder, .media-frame.missing .media-placeholder { display: flex; }
 .media-frame.missing img { display: none; }

@@ -18,7 +18,7 @@ const linkList = (links, className = "") => links.map((link) => {
 const mediaMarkup = (src, alt, label) => `
   <div class="media-frame">
     ${src ? `<img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" loading="lazy" />` : ""}
-    <span class="media-placeholder">${escapeHtml(label)}<br /><small>Add image in the matching media folder</small></span>
+    <span class="media-placeholder"><b>${escapeHtml(label)}</b><small>Add image in the matching media folder</small></span>
   </div>
 `;
 
@@ -54,7 +54,7 @@ const renderPublications = () => {
   $("#publication-list").innerHTML = siteData.publications.length
     ? siteData.publications.map((item) => `
       <article class="publication-row reveal">
-        ${mediaMarkup(item.image, `${item.title} thumbnail`, `${item.venue} ${item.year}`)}
+        ${mediaMarkup(item.image, `${item.title} thumbnail`, "Publication thumbnail")}
         <div class="publication-body">
           <h3>${escapeHtml(item.title)}</h3>
           <p>${escapeHtml(item.authors)}</p>
