@@ -42,7 +42,7 @@ const siteData = {
       description: "A unified recovery–locomotion framework designed to recover from diverse falls, resume walking, and remain robust under physical variation.",
       tags: ["Humanoid", "Reinforcement Learning", "Sim-to-Real"],
       links: [
-        { label: "RoboCup demo", url: "media/PROJECTS/2026robocup.mp4" },
+        { label: "RoboCup demo", url: "media/PROJECTS/Robocup/2026robocup.mp4" },
         { label: "G1 recovery", url: "media/RESEARCH/2026G1摔倒起身行走.gif" },
         { label: "T1 recovery", url: "media/RESEARCH/2026T1摔倒起身行走.gif" }
       ]
@@ -108,16 +108,34 @@ const siteData = {
       imageAlt: "IROS Mecha Challenge presentation"
     },
     {
+      title: "G1 Robot Dance Deployment",
+      year: "2025",
+      image: "media/PROJECTS/2025 IROS competition/real robot dance.gif",
+      imageAlt: "Unitree G1 humanoid robot performing the retargeted dance"
+    },
+    {
       title: "ATEC Real-World Extreme Challenge",
       year: "2025",
-      image: "media/PROJECTS/2025atec-certificate.jpg",
+      image: "media/PROJECTS/2025ATECup competition/2025atec-certificate.jpg",
       imageAlt: "ATEC award certificate"
+    },
+    {
+      title: "YC China Startup Camp",
+      year: "2024",
+      image: "media/PROJECTS/2024 startup - YC China/合照.jpg",
+      imageAlt: "Team photograph at the 2024 YC China startup camp"
     },
     {
       title: "Future Dynamics",
       year: "2024—Now",
       image: "media/PROJECTS/2024future-dynamics-humanoid.jpg",
       imageAlt: "Future Dynamics humanoid robot concept"
+    },
+    {
+      title: "DJI RoboMaster High-School Camp",
+      year: "2019",
+      image: "media/PROJECTS/2019 DJI Robomaster high-school summer-camp/robot.png",
+      imageAlt: "Robot built at the DJI RoboMaster high-school summer camp"
     }
   ],
 
