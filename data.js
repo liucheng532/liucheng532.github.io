@@ -6,22 +6,17 @@
  */
 const siteData = {
   profile: {
-    name: "Liu Cheng",
+    name: "Cheng Liu",
     nameZh: "刘铖",
     role: "Robotics researcher at HKUST(GZ).",
-    focus: [
-      "humanoid robotics.",
-      "reinforcement learning.",
-      "robot soccer.",
-      "embodied intelligence."
-    ],
+    focus: ["humanoid robotics, reinforcement learning, and embodied intelligence."],
     portrait: "media/ABOUT/正面照.png",
     resume: "Liucheng_resume.pdf",
     email: "cliu425@connect.hkust-gz.edu.cn"
   },
 
   about: [
-    "I’m Liu Cheng (刘铖), an M.Phil. student in Robotics and Autonomous Systems at the Hong Kong University of Science and Technology (Guangzhou). My research interests include humanoid locomotion, whole-body control, reinforcement learning, and embodied intelligence.",
+    "I’m Cheng Liu (刘铖), an M.Phil. student in Robotics and Autonomous Systems at the Hong Kong University of Science and Technology (Guangzhou). My research interests include humanoid locomotion, whole-body control, reinforcement learning, and embodied intelligence.",
     "I work across algorithms and robot systems, with a particular interest in turning policies that succeed in simulation into physical skills that remain reliable in the real world."
   ],
 

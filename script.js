@@ -95,6 +95,7 @@ const setupImageFallbacks = () => {
 
 const setupHeroFocus = () => {
   const focus = $("#hero-focus");
+  if (siteData.profile.focus.length < 2) return;
   let index = 0;
   window.setInterval(() => {
     focus.classList.add("changing");
