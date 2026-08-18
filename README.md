@@ -13,7 +13,9 @@
 media: "media/PROJECTS/my-project/demo.gif"
 ```
 
-提交并推送到 `main` 后，GitHub Actions 仍会自动安装依赖、构建完整站点并检查内部链接，但预览模式下只会把 `_preview/index.html` 发布到 GitHub Pages，不会公开草稿内容。
+提交并推送到 `main` 后，GitHub Actions 仍会自动安装依赖、构建完整站点并检查内部链接，但预览模式下只会把 `_preview/index.html` 发布到 GitHub Pages，不会在网站中展示完整草稿。
+
+> 注意：当前 GitHub 仓库本身是公开仓库，因此已提交的源文件和素材仍可在 GitHub 中查看。预览模式只控制网站部署；如需让源文件也不可见，需要把仓库改为私有，并重新确认账户所支持的 Pages 方案。
 
 ## Windows 首次配置
 
