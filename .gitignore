@@ -1,16 +1,15 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.bundle/
+/vendor/
+tmp/
+
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
-node_modules/
-dist/
-build/
-*.tmp
-*.bak
+.vscode/
+.ruby-lsp/
 
-# Local visual references that are not part of the published website.
-/fit.jpg
-
-# Large local portfolio decks are kept locally; GitHub rejects files over 100 MB.
-/file/港科广-刘铖-作品集.pptx
-/file/Learning Robust Humanoid Motion Control for Robot Soccer Recovery-Locomotion and Simulated Dribbling.pptx
+*.log

@@ -1,0 +1,85 @@
+<link rel="icon" type="image/svg+xml" href="{{ '/images/favicon.svg' | relative_url }}">
+<link rel="shortcut icon" href="{{ '/images/favicon.svg' | relative_url }}">
+
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#ffffff">
+
+<!-- 学术图标和增强的强调色样式 -->
+<link rel="stylesheet" href="{{ '/assets/css/academicons.css' | relative_url }}"/>
+<link rel="stylesheet" href="{{ '/assets/css/accent-enhancements.css' | relative_url }}"/>
+
+<!-- 强调色增强的JavaScript动效 -->
+<script>
+// 页面加载后的滚动动画
+document.addEventListener('DOMContentLoaded', function() {
+  // 滚动触发动画
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const observer = 'IntersectionObserver' in window ? new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  }, observerOptions) : null;
+  
+  // 为元素添加动画类
+  document.querySelectorAll('.paper-box, .highlight-block').forEach(el => {
+    el.classList.add('fade-in-up');
+    if (observer) {
+      observer.observe(el);
+    } else {
+      el.classList.add('animate');
+    }
+  });
+  
+  // 为重要链接添加强调色效果
+  document.querySelectorAll('a[href*="pdf"], a[href*="github"], a[href*="arxiv"]').forEach(link => {
+    link.classList.add('link-accent');
+  });
+
+  // Play cover videos only when visible to reduce buffering / stutter
+  const coverVideos = document.querySelectorAll('.publication-cover-video, .competition-cover-video');
+  const tryPlay = (video) => {
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(() => {});
+    }
+  };
+
+  coverVideos.forEach(video => {
+    video.muted = true;
+    video.setAttribute('playsinline', '');
+    video.addEventListener('stalled', () => tryPlay(video));
+    video.addEventListener('ended', () => tryPlay(video));
+  });
+
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting && entry.intersectionRatio > 0.35) {
+          tryPlay(video);
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: [0, 0.35, 0.7] });
+
+    coverVideos.forEach(video => videoObserver.observe(video));
+  } else {
+    coverVideos.forEach(tryPlay);
+  }
+});
+
+// 动态添加装饰条
+document.addEventListener('DOMContentLoaded', function() {
+  const body = document.body;
+  body.classList.add('accent-border-top');
+});
+</script>
+
+<!-- end custom head snippets -->
