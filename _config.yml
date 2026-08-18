@@ -1,0 +1,98 @@
+# Site identity
+locale: "en-US"
+lang: "en"
+title: "Cheng Liu"
+title_separator: "-"
+description: "Personal homepage of Cheng Liu — humanoid robotics, reinforcement learning, whole-body control, and embodied intelligence."
+url: "https://liucheng532.github.io"
+baseurl: ""
+repository: "liucheng532/liucheng532.github.io"
+timezone: "Asia/Shanghai"
+
+# Optional services. Leave blank until a real account/ID is available.
+google_analytics_id:
+google_site_verification:
+bing_site_verification:
+baidu_site_verification:
+google_scholar_stats_use_cdn: false
+
+# SEO and sidebar fallback data. Day-to-day content lives in _data/content.yml.
+author:
+  name: "Cheng Liu (刘铖)"
+  avatar: "images/avatar.png"
+  bio: "M.Phil. student in Robotics and Autonomous Systems at HKUST(GZ)"
+  location: "Guangzhou, China"
+  email: "cliu425@connect.hkust-gz.edu.cn"
+  github: "liucheng532"
+  cv: "CV/Liu_Cheng_CV.pdf"
+
+t:
+  en:
+    about: "About"
+    news: "News"
+    research: "Research"
+    publications: "Publications"
+    education: "Education"
+    experience: "Experience"
+    projects: "Projects"
+    skills: "Skills"
+    awards: "Awards"
+
+# Build input/output
+include:
+  - _pages
+exclude:
+  - docs
+  - scripts
+  - vendor
+  - tmp
+  - node_modules
+  - .bundle
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - run_server.sh
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Markdown and page defaults
+markdown: kramdown
+highlighter: rouge
+lsi: false
+incremental: false
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

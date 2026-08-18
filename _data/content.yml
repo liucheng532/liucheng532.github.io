@@ -1,0 +1,186 @@
+profile:
+  name: "Cheng Liu"
+  name_zh: "刘铖"
+  role: "M.Phil. student in Robotics and Autonomous Systems at HKUST(GZ)"
+  tagline: "Humanoid robotics, reinforcement learning, whole-body control, and embodied intelligence."
+  location: "Guangzhou, China"
+  email: "cliu425@connect.hkust-gz.edu.cn"
+  github: "liucheng532"
+  avatar: "images/avatar.png"
+  cv: "CV/Liu_Cheng_CV.pdf"
+
+about:
+  - "I am an M.Phil. student in Robotics and Autonomous Systems at the Hong Kong University of Science and Technology (Guangzhou). My research focuses on humanoid locomotion, whole-body control, reinforcement learning, and embodied intelligence."
+  - "I work across algorithms and robot systems, with a particular interest in turning policies that succeed in simulation into physical skills that remain reliable in the real world."
+
+interests:
+  - Humanoid Robotics
+  - Reinforcement Learning
+  - Whole-Body Control
+  - Sim-to-Real
+  - Embodied Intelligence
+
+news:
+  - date: "2026.07"
+    text: "Our team won the RoboCup World Cup Soccer 3D Simulation championship."
+  - date: "2026.06"
+    text: "Won the HKUST(GZ) Campus Top 10 Singing Competition championship."
+  - date: "2026.02"
+    text: "Our paper on bimanual active perception was accepted by ICRA 2026."
+  - date: "2025.12"
+    text: "Led the team to 8th place in the ATEC 2025 Real-World Extreme Challenge."
+  - date: "2025.10"
+    text: "Won 3rd place in the IROS 2025 Robot Dance Competition."
+
+research:
+  - title: "Learning Robust Humanoid Motion Control for Robot Soccer"
+    year: "2026"
+    media: "media/RESEARCH/2026unify recovery locomotion.png"
+    alt: "Unified humanoid recovery and locomotion framework"
+    description: "A unified recovery-locomotion framework designed to recover from diverse falls, resume walking, and remain robust under physical variation."
+    tags: ["Humanoid", "Reinforcement Learning", "Sim-to-Real"]
+    links:
+      - label: "RoboCup demo"
+        url: "media/PROJECTS/Robocup/2026robocup.mp4"
+      - label: "G1 recovery"
+        url: "media/RESEARCH/2026G1摔倒起身行走.gif"
+      - label: "T1 recovery"
+        url: "media/RESEARCH/2026T1摔倒起身行走.gif"
+  - title: "Self-Play Dribbling for Humanoid Robot Soccer"
+    year: "2026"
+    media: "media/RESEARCH/2026self-play dribble framework.png"
+    alt: "Self-play humanoid dribbling framework"
+    description: "A self-play learning framework for agile dribbling policies in competitive multi-agent environments."
+    tags: ["Self-Play", "Robot Soccer", "Deep RL"]
+    links:
+      - label: "Video"
+        url: "media/RESEARCH/2026self-play dribble policy.mp4"
+  - title: "From Video to G1 Dance"
+    year: "2025"
+    media: "media/PROJECTS/2025 IROS competition/2025gmr-retargeting.gif"
+    alt: "Human motion retargeted to a Unitree G1 humanoid robot"
+    description: "A motion-retargeting and whole-body-control pipeline for transferring human motion from video to a Unitree G1 humanoid robot."
+    tags: ["Motion Retargeting", "Whole-Body Control", "IROS"]
+    links:
+      - label: "GitHub"
+        url: "https://github.com/liucheng532/From-Video-to-G1-Dance"
+
+publications:
+  - title: "Towards Exploratory and Focused Manipulation with Bimanual Active Perception: A New Problem, Benchmark and Strategy"
+    authors: "Yuxin He, Ruihao Zhang, Tianao Shen, Cheng Liu, Qiang Nie"
+    venue: "IEEE International Conference on Robotics and Automation (ICRA), 2026 — Accepted"
+    year: "2026"
+    media: "media/RESEARCH/2026self-play dribble framework.png"
+    alt: "Research project preview"
+    links: []
+
+education:
+  - institution: "The Hong Kong University of Science and Technology (Guangzhou)"
+    degree: "M.Phil. in Robotics and Autonomous Systems"
+    location: "Guangzhou, China"
+    period: "Sep. 2024 - Oct. 2026"
+    details: "Current GPA: 3.3/4.0"
+  - institution: "Nanjing University of Posts and Telecommunications"
+    degree: "B.Eng. in Electromagnetic Fields and Wireless Technology"
+    location: "Nanjing, China"
+    period: "Sep. 2020 - Jun. 2024"
+    details: "Honor Degree and Top 5% General Scholarship; focus on wireless systems and robotics."
+
+experience:
+  - title: "Text2HumanoidAction — M.Phil. Thesis Project"
+    organization: "HKUST(GZ)"
+    period: "Mar. 2026 - Present"
+    description: "Developing a framework that uses physical priors from a large-scale video generation model to guide continuous whole-body humanoid motion generation."
+  - title: "RoboCup 3D Simulation Competition — Team Member"
+    organization: "HKUST(GZ)"
+    period: "Mar. 2026 - Present"
+    description: "Built a curriculum-learning fall-recovery policy with PPO, key-state initialization, and domain randomization."
+  - title: "ATEC 2025 Real-World Extreme Challenge — Team Leader / Core Developer"
+    organization: "CUHK & Alibaba"
+    period: "Sep. 2025 - Dec. 2025"
+    description: "Led the team to 8th place and developed teleoperation, data-collection, and bimanual locomotion components."
+  - title: "IROS 2025 Robot Dance Competition — Project Leader"
+    organization: "Guangdong, China"
+    period: "Jun. 2025 - Oct. 2025"
+    description: "Developed a video-to-dance pipeline for Unitree G1 using motion retargeting and whole-body control; won 3rd place."
+  - title: "THU AIR Embodied AI Winter Camp — Outstanding Camper"
+    organization: "Tsinghua University AIR"
+    period: "Jan. 2025 - Feb. 2025"
+    description: "Built a simulation data-collection pipeline and deployed ACT for robotic manipulation."
+  - title: "Future Dynamics — Co-Founder / Technical Lead"
+    organization: "HKUST(GZ)"
+    period: "Mar. 2024 - Present"
+    description: "Lead technical strategy and robotics hardware-software integration."
+  - title: "Xbotpark Entrepreneurial Camp — Team Leader"
+    organization: "Changzhou, Jiangsu"
+    period: "Jul. 2022 - Aug. 2022"
+    description: "Developed a medical IoT prototype with STM32, RFID, and Wi-Fi; awarded Best Project."
+  - title: "RoboCup 3D Simulation Competition — Team Leader / Algorithm Developer"
+    organization: "NJUPT"
+    period: "Nov. 2020 - Nov. 2022"
+    description: "Implemented role assignment and collaboration algorithms and optimized bipedal walking using CMA-ES."
+
+projects:
+  - title: "RoboCup 3D Simulation Champion"
+    year: "2026"
+    media: "media/PROJECTS/Robocup/2026robocup championship.jpg"
+    alt: "HKUST Guangzhou RoboCup championship team"
+    links:
+      - label: "Video"
+        url: "media/PROJECTS/Robocup/2026robocup.mp4"
+  - title: "HKUST(GZ) RoboCup Team"
+    year: "2026"
+    media: "media/PROJECTS/Robocup/2026robocup_hkustgz.jpg"
+    alt: "HKUST Guangzhou RoboCup team"
+    links: []
+  - title: "From Video to G1 Dance"
+    year: "2025"
+    media: "media/PROJECTS/2025 IROS competition/2025iros-presentation.jpg"
+    alt: "IROS Mecha Challenge presentation"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/liucheng532/From-Video-to-G1-Dance"
+  - title: "ATEC Real-World Extreme Challenge"
+    year: "2025"
+    media: "media/PROJECTS/2025ATECup competition/data collection teleoperation.jpg"
+    alt: "Teleoperation data collection for the ATEC challenge"
+    links:
+      - label: "Demo 1"
+        url: "media/PROJECTS/2025ATECup competition/real robot locomanipulation.mp4"
+      - label: "Demo 2"
+        url: "media/PROJECTS/2025ATECup competition/real robot locomanipulation2.mp4"
+  - title: "Future Dynamics"
+    year: "2024 - Present"
+    media: "media/PROJECTS/2024future-dynamics-humanoid.jpg"
+    alt: "Future Dynamics humanoid robot concept"
+    links: []
+  - title: "DJI RoboMaster High-School Camp"
+    year: "2019"
+    media: "media/PROJECTS/2019 DJI Robomaster high-school summer-camp/robot.png"
+    alt: "Robot built at the DJI RoboMaster summer camp"
+    links: []
+
+skills:
+  languages: ["Python", "C/C++", "ROS", "PyTorch", "MATLAB"]
+  robotics: ["Isaac Gym", "MuJoCo", "Deep Reinforcement Learning", "Whole-Body Control"]
+  tools: ["Git", "Docker", "Linux", "SolidWorks", "STM32", "PCB Design"]
+
+honors:
+  - year: "2026"
+    title: "RoboCup World Cup Soccer 3D Simulation Champion"
+  - year: "2026"
+    title: "HKUST(GZ) Campus Top 10 Singing Competition Champion"
+  - year: "2025"
+    title: "ATEC Real-World Extreme Challenge — 8th Place"
+  - year: "2025"
+    title: "IROS Mecha Challenge (Robot Dance) — 3rd Place"
+  - year: "2024"
+    title: "Honor Degree and General Scholarship (Top 5%), NJUPT"
+  - year: "2023"
+    title: "National Inspiration Scholarship"
+  - year: "2022"
+    title: "RoboCup China Competition National Championship"
+  - year: "2021"
+    title: "RoboCup World Cup — Third Prize"
+  - year: "2019"
+    title: "DJI RoboMaster Robot Summer Camp — Third Prize"

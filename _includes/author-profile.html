@@ -1,0 +1,38 @@
+{% assign profile = site.data.content.profile | default: site.author %}
+
+<div itemscope itemtype="https://schema.org/Person" class="profile_box">
+  {% if profile.avatar %}
+  <div class="author__avatar">
+    <img src="{{ profile.avatar | relative_url }}" class="author__avatar" alt="Portrait of {{ profile.name }}">
+  </div>
+  {% endif %}
+
+  <div class="author__content">
+    <h3 class="author__name">
+      {{ profile.name }}{% if profile.name_zh %}<br>({{ profile.name_zh }}){% endif %}
+    </h3>
+    {% if profile.role %}<p class="author__bio">{{ profile.role }}</p>{% elsif profile.bio %}<p class="author__bio">{{ profile.bio }}</p>{% endif %}
+  </div>
+
+  <div class="author__urls-wrapper">
+    <ul class="author__urls social-icons">
+      {% if profile.tagline %}<li><div class="profile-tagline">{{ profile.tagline }}</div></li>{% endif %}
+      {% if profile.location %}<li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> {{ profile.location }}</li>{% endif %}
+      {% if profile.email %}<li><a href="mailto:{{ profile.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>{% endif %}
+      {% if profile.cv %}<li><a href="{{ profile.cv | relative_url }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</a></li>{% endif %}
+      {% if profile.github %}<li><a href="https://github.com/{{ profile.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>{% endif %}
+      {% if profile.googlescholar %}<li><a href="{{ profile.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>{% endif %}
+      {% if profile.linkedin %}<li><a href="{{ profile.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>{% endif %}
+      {% if profile.orcid %}<li><a href="{{ profile.orcid }}"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i> ORCID</a></li>{% endif %}
+      {% if profile.website %}<li><a href="{{ profile.website }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>{% endif %}
+    </ul>
+
+    <div class="author__urls_sm">
+      {% if profile.email %}<a href="mailto:{{ profile.email }}" aria-label="Email"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>{% endif %}
+      {% if profile.cv %}<a href="{{ profile.cv | relative_url }}" aria-label="CV"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>{% endif %}
+      {% if profile.github %}<a href="https://github.com/{{ profile.github }}" aria-label="GitHub"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>{% endif %}
+      {% if profile.googlescholar %}<a href="{{ profile.googlescholar }}" aria-label="Google Scholar"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i></a>{% endif %}
+      {% if profile.linkedin %}<a href="{{ profile.linkedin }}" aria-label="LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a>{% endif %}
+    </div>
+  </div>
+</div>
