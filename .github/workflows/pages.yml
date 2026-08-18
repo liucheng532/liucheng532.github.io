@@ -42,10 +42,24 @@ jobs:
       - name: Check internal references
         run: bundle exec ruby scripts/check_site.rb _site
 
+      - name: Prepare deployment artifact
+        env:
+          SITE_PUBLISH_MODE: ${{ vars.SITE_PUBLISH_MODE }}
+        shell: bash
+        run: |
+          mkdir -p _deploy
+          if [[ "$SITE_PUBLISH_MODE" == "published" ]]; then
+            cp -a _site/. _deploy/
+            echo "Deployment mode: published" >> "$GITHUB_STEP_SUMMARY"
+          else
+            cp -a _preview/. _deploy/
+            echo "Deployment mode: preview (public placeholder only)" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: _site
+          path: _deploy
 
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

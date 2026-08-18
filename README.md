@@ -1,6 +1,6 @@
 # Cheng Liu — Personal Website
 
-基于 Jekyll 的个人学术主页，部署地址为 <https://liucheng532.github.io>。页面沿用 AcadHomepage/Minimal Mistakes 系列模板的布局，并已迁移旧站中的个人资料、研究、项目、头像和简历。
+基于 Jekyll 的个人学术主页。当前处于 **预览模式**：完整内容只在本地预览，<https://liucheng532.github.io> 仅显示“网站正在整理中”的占位页。页面沿用 AcadHomepage/Minimal Mistakes 系列模板的布局，并已迁移旧站中的个人资料、研究、项目、头像和简历。
 
 ## 以后只需要改这两个位置
 
@@ -13,7 +13,7 @@
 media: "media/PROJECTS/my-project/demo.gif"
 ```
 
-提交并推送到 `main` 后，GitHub Actions 会自动安装依赖、构建 Jekyll 并发布 GitHub Pages，不需要手动上传 `_site/`。
+提交并推送到 `main` 后，GitHub Actions 仍会自动安装依赖、构建完整站点并检查内部链接，但预览模式下只会把 `_preview/index.html` 发布到 GitHub Pages，不会公开草稿内容。
 
 ## Windows 首次配置
 
@@ -37,6 +37,8 @@ media: "media/PROJECTS/my-project/demo.gif"
 .\scripts\serve.ps1 -Port 4010
 ```
 
+本地预览始终显示完整站点，不受 GitHub 的发布模式影响。编辑 `_data/content.yml` 或页面文件并保存后，浏览器会自动刷新。按 `Ctrl+C` 停止预览服务。
+
 ## 发布前构建检查
 
 ```powershell
@@ -50,8 +52,12 @@ media: "media/PROJECTS/my-project/demo.gif"
 - 工作流：`.github/workflows/pages.yml`
 - 触发条件：推送到 `main`，或在 Actions 页面手动运行
 - Pull Request：只构建检查，不执行正式部署
-- 正式部署：仅 `main` 分支可发布到 `github-pages` 环境
+- 当前仓库变量：`SITE_PUBLISH_MODE=preview`
+- 预览模式：部署 `_preview/` 中的公开占位页，完整草稿不对外发布
+- 正式模式：将变量改为 `SITE_PUBLISH_MODE=published` 后，下一次工作流会部署完整 `_site/`
 - 依赖更新：Dependabot 每月检查 Bundler 与 GitHub Actions
+
+准备好正式发布时，告诉 Codex“可以发布网站”，即可切换变量并触发部署。也可以在 GitHub 仓库的 **Settings → Secrets and variables → Actions → Variables** 中修改 `SITE_PUBLISH_MODE`，然后手动运行 Pages 工作流。
 
 ## 内容更新约定
 
@@ -71,6 +77,7 @@ images/                 头像与网站图标
 CV/                     公开简历
 assets/                 样式、脚本和字体
 scripts/                Windows 初始化、构建和预览脚本
+_preview/               预览模式下的公开占位页
 .github/workflows/      GitHub Pages 自动部署
 ```
 
