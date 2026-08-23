@@ -212,11 +212,13 @@ a.accent-text.accent-text-link:focus {
   }
 
   .sidebar .profile_box {
+    display: block;
     width: 100%;
     text-align: center;
   }
 
   .sidebar div.author__avatar {
+    display: block;
     width: 100%;
   }
 
@@ -236,6 +238,7 @@ a.accent-text.accent-text-link:focus {
   }
 
   .sidebar .author__content {
+    display: block;
     width: 100%;
     max-width: 16rem;
     margin: 0 auto;
