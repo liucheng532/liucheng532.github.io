@@ -246,14 +246,14 @@ a.accent-text.accent-text-link:focus {
 
   .sidebar .author__name {
     margin: 1rem 0 0.7rem;
-    font-size: 1.55rem;
+    font-size: 1.75rem;
     line-height: 1.2;
     letter-spacing: -0.015em;
   }
 
   .sidebar .author__bio {
     margin: 0 auto 0.8rem;
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     line-height: 1.55;
     text-align: center;
     overflow-wrap: normal;
@@ -275,7 +275,7 @@ a.accent-text.accent-text-link:focus {
   .sidebar .author__urls a,
   .sidebar .author__urls li,
   .sidebar .profile-tagline {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.45;
   }
 }
