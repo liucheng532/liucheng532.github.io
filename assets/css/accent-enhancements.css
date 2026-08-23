@@ -199,6 +199,84 @@ a.accent-text.accent-text-link:focus {
   }
 }
 
+/* Desktop profile sidebar: give the portrait and introduction proper presence */
+@media (min-width: 1100px) {
+  #main > .sidebar {
+    width: 21%;
+    padding-right: 1.25rem;
+  }
+
+  #main > .page {
+    width: 79%;
+    padding-left: 1.25rem;
+  }
+
+  .sidebar .profile_box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sidebar div.author__avatar {
+    width: 100%;
+  }
+
+  .sidebar div.author__avatar img.author__avatar {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    padding: 6px;
+    object-fit: cover;
+    object-position: center 18%;
+    border: 1px solid rgba(1, 47, 99, 0.18);
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(1, 47, 99, 0.12);
+  }
+
+  .sidebar .author__content {
+    width: 100%;
+    max-width: 16rem;
+    margin: 0 auto;
+  }
+
+  .sidebar .author__name {
+    margin: 1rem 0 0.7rem;
+    font-size: 1.55rem;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+
+  .sidebar .author__bio {
+    margin: 0 auto 0.8rem;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    text-align: center;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .sidebar .author__urls-wrapper,
+  .sidebar .author__urls {
+    width: 100%;
+  }
+
+  .sidebar .author__urls {
+    max-width: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+
+  .sidebar .author__urls a,
+  .sidebar .author__urls li,
+  .sidebar .profile-tagline {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+}
+
 /* 强调色分割线 */
 .divider-accent {
   height: 2px;
