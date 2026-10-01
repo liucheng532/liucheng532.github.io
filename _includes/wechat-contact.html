@@ -1,0 +1,9 @@
+<details class="wechat-contact">
+  <summary><i class="fab fa-fw fa-weixin" aria-hidden="true"></i> <span>WeChat</span></summary>
+  <div class="wechat-contact__card">
+    <a href="{{ profile.wechat_qr | relative_url }}" target="_blank" rel="noopener" aria-label="Open WeChat QR code for {{ profile.name }}">
+      <img src="{{ profile.wechat_qr | relative_url }}" alt="{{ profile.name }}'s WeChat QR code — scan to add as a friend" loading="lazy">
+    </a>
+    <p>Scan to connect</p>
+  </div>
+</details>

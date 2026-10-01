@@ -1,0 +1,1 @@
+{% assign link_label = include.label | downcase %}{% if link_label contains 'github' %}<i class="fab fa-github" aria-hidden="true"></i>{% elsif link_label contains 'video' or link_label contains 'demo' or link_label contains 'recovery' %}<i class="fas fa-play-circle" aria-hidden="true"></i>{% else %}<i class="fas fa-external-link-alt" aria-hidden="true"></i>{% endif %}

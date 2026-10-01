@@ -9,9 +9,15 @@
 
   <div class="author__content">
     <h3 class="author__name">
-      {{ profile.name }}{% if profile.name_zh %}<br>({{ profile.name_zh }}){% endif %}
+      {{ profile.name }}{% if profile.name_zh %}<span class="author__name-zh">({{ profile.name_zh }})</span>{% endif %}
     </h3>
-    {% if profile.role %}<p class="author__bio">{{ profile.role }}</p>{% elsif profile.bio %}<p class="author__bio">{{ profile.bio }}</p>{% endif %}
+    {% if profile.degree %}
+    <p class="author__bio author__bio--structured">
+      <span class="author__degree">{{ profile.degree }}</span>
+      {% if profile.program %}<span class="author__program">{{ profile.program }}</span>{% endif %}
+      {% if profile.institution %}<span class="author__institution">{{ profile.institution }}</span>{% endif %}
+    </p>
+    {% elsif profile.role %}<p class="author__bio">{{ profile.role }}</p>{% elsif profile.bio %}<p class="author__bio">{{ profile.bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
@@ -19,6 +25,7 @@
       {% if profile.tagline %}<li><div class="profile-tagline">{{ profile.tagline }}</div></li>{% endif %}
       {% if profile.location %}<li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> {{ profile.location }}</li>{% endif %}
       {% if profile.email %}<li><a href="mailto:{{ profile.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>{% endif %}
+      {% if profile.wechat_qr %}<li>{% include wechat-contact.html %}</li>{% endif %}
       {% if profile.cv %}<li><a href="{{ profile.cv | relative_url }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> CV</a></li>{% endif %}
       {% if profile.github %}<li><a href="https://github.com/{{ profile.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>{% endif %}
       {% if profile.googlescholar %}<li><a href="{{ profile.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>{% endif %}
@@ -29,6 +36,7 @@
 
     <div class="author__urls_sm">
       {% if profile.email %}<a href="mailto:{{ profile.email }}" aria-label="Email"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>{% endif %}
+      {% if profile.wechat_qr %}{% include wechat-contact.html %}{% endif %}
       {% if profile.cv %}<a href="{{ profile.cv | relative_url }}" aria-label="CV"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>{% endif %}
       {% if profile.github %}<a href="https://github.com/{{ profile.github }}" aria-label="GitHub"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>{% endif %}
       {% if profile.googlescholar %}<a href="{{ profile.googlescholar }}" aria-label="Google Scholar"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i></a>{% endif %}
