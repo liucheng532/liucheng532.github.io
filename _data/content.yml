@@ -26,6 +26,8 @@ interests:
   - Agentic Robotics
 
 news:
+  - date: "2026.10"
+    text: "<strong class='news-highlight'>PingPongDuo</strong> is released! <a href='https://www.archon.tech/research/PingpongDuo'>Project page <i class='fas fa-external-link-alt' aria-hidden='true'></i></a> · <a href='https://arxiv.org/abs/2610.20579'>arXiv <i class='fas fa-file-alt' aria-hidden='true'></i></a>."
   - date: "2026.09"
     text: "Our paper, <strong class='news-highlight'>PingPongDuo: Agile Humanoid Table Tennis Doubles with Safe Team Coordination</strong>, has been submitted to <strong class='news-highlight'>ICRA 2027</strong>."
   - date: "2026.07"
@@ -44,16 +46,20 @@ research:
     year: "2026"
     media: "media/RESEARCH/pingpongduo.gif"
     alt: "Two humanoid robots playing table tennis doubles in the PingPongDuo project"
-    description: "Agile humanoid table tennis doubles with safe team coordination. Contributed to the RL planner's sim-to-real integration and deployment on humanoid robots. Submitted to ICRA 2027."
-    tags: ["Humanoid", "Table Tennis", "Sim-to-Real", "ICRA 2027 · Submitted"]
-    links: []
+    description: "Agile humanoid table tennis doubles with safe team coordination. Contributed to the RL planner's sim-to-real integration and deployment on humanoid robots. Project page and arXiv preprint are now available."
+    tags: ["Humanoid", "Table Tennis Doubles", "Sim-to-Real", "ICRA 2027 · Submitted"]
+    links:
+      - label: "Project Page"
+        url: "https://www.archon.tech/research/PingpongDuo"
+      - label: "arXiv"
+        url: "https://arxiv.org/abs/2610.20579"
   - title: "Learning Robust Humanoid Motion Control for Robot Soccer"
     year: "2026"
-    media: "media/RESEARCH/recovery-locomotion-real-1.gif"
-    alt: "Real humanoid robot recovering from a fall and returning to locomotion"
+    media: "media/RESEARCH/recovery-locomotion-g1.gif"
+    alt: "Animated Unitree G1 demonstration of fall recovery and locomotion"
     main_media:
-      - media: "media/RESEARCH/recovery-locomotion-real-2.gif"
-        alt: "Second real-robot demonstration of unified recovery and locomotion"
+      - media: "media/RESEARCH/recovery-locomotion-t1.gif"
+        alt: "Animated T1 demonstration of fall recovery and locomotion"
     description: "A unified recovery-locomotion framework designed to recover from diverse falls, resume walking, and remain robust under physical variation."
     tags: ["Humanoid", "Reinforcement Learning", "Sim-to-Real"]
     links:
@@ -86,6 +92,17 @@ research:
         url: "https://github.com/liucheng532/From-Video-to-G1-Dance"
 
 publications:
+  - title: "PingpongDuo: Agile Humanoid Table Tennis Doubles with Safe Team Coordination"
+    authors: "Haoran Jiang, Yichao Zhong, Kai Zhang, <strong>Cheng Liu</strong>, Yixuan Pan, Zhenjie Yang, Jingbo Wang, Tianyu Li, Li Chen"
+    venue: "arXiv:2610.20579, 2026 · Submitted to ICRA 2027"
+    year: "2026"
+    media: "media/RESEARCH/pingpongduo.gif"
+    alt: "Humanoid table tennis doubles with safe team coordination"
+    links:
+      - label: "Project Page"
+        url: "https://www.archon.tech/research/PingpongDuo"
+      - label: "arXiv"
+        url: "https://arxiv.org/abs/2610.20579"
   - title: "Towards Exploratory and Focused Manipulation with Bimanual Active Perception: A New Problem, Benchmark and Strategy"
     authors: "Yuxin He, Ruihao Zhang, Tianao Shen, <strong>Cheng Liu</strong>, Qiang Nie"
     venue: "IEEE International Conference on Robotics and Automation (ICRA), 2026 — Accepted"
@@ -118,7 +135,7 @@ intern_research_experience:
     location: "Hong Kong"
     logo: "images/logos/opendrivelab.jpg"
     logo_class: "organization-logo--compact"
-    description: "Contributed to PingPongDuo: Agile Humanoid Table Tennis Doubles with Safe Team Coordination (submitted to ICRA 2027), leading the RL planner's sim-to-real deployment."
+    description: "Contributed to PingPongDuo: Agile Humanoid Table Tennis Doubles with Safe Team Coordination (arXiv:2610.20579; submitted to ICRA 2027), leading the RL planner's sim-to-real deployment."
   - organization: "Institute for AI Industry Research (AIR), Tsinghua University"
     role: "Embodied AI Winter Camp · Outstanding Camper"
     period: "Jan. 2025 - Feb. 2025"
